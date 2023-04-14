@@ -2,20 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css"/>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   
   <title>Title</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="container">
+    <div id="comment-container" class="comment-container">
+      <!--  -->
+      
+        <!-- <div class="all-comment">
+            <div class="card">
+                <span class="text">First Commenter</span>
+                <span id="reply" class="reply">Add Reply</span>
+            </div>
+        </div> -->
 
-  <!-- Pull dynamic content from the data.json file -->
+         <!-- <div class="comment-details">
+            <input type="text" placeholder="add text here" class="input" />
+            <button class="btn submit">Submit</button>
+        </div> -->
+      
+<!--  -->
+
+<div class="all-comment">
+<div class="comment-bar">
+  <div class="d-flex comment-dp-name">
+   <img src="./images/avatars/image-amyrobson.png" alt=""/>
+   <h4>amyrobson</h4>
+   <p class="grey">1 month ago</p>
+  </div>
+  <p class="grey">Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.</p>
+  <div class="d-flex reply-vote-wrap">
+  <div class="d-flex vote-bar">
+    <img class="plus" src="./images/icon-plus.svg" alt="">
+    <p class="votes">12</p>
+    <img class="minus" src="./images/icon-minus.svg" alt="">
+  </div>
+  <div class="d-flex reply-icon-wrap">
+    <img src="./images/icon-reply.svg" alt=""/>
+    <p class="reply">Reply</p>
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="all-comment">
+<div class="comment-bar">
+  <div class="d-flex comment-dp-name">
+   <img src="./images/avatars/image-maxblagun.png" alt=""/>
+   <h4>maxblagun</h4>
+   <p class="grey">2 weeks ago</p>
+  </div>
+  <p class="grey">Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!"</p>
+  <div class="d-flex reply-vote-wrap">
+  <div class="d-flex vote-bar">
+    <img class="plus" src="./images/icon-plus.svg" alt="">
+    <p class="votes">5</p>
+    <img class="minus" src="./images/icon-minus.svg" alt="">
+  </div>
+  <div class="d-flex reply-icon-wrap">
+    <img src="./images/icon-reply.svg" alt=""/>
+    <p class="reply">Reply</p>
+  </div>
+  </div>
+</div>
+<!-- replies -->
+<div class="comment-bar">
+  <div class="d-flex comment-dp-name">
+   <img src="./images/avatars/image-ramsesmiron.png" alt=""/>
+   <h4>ramsesmiron</h4>
+   <p class="grey">1 week ago</p>
+  </div>
+  <p class="grey">If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
+  <div class="d-flex reply-vote-wrap">
+  <div class="d-flex vote-bar">
+    <img class="plus" src="./images/icon-plus.svg" alt="">
+    <p class="votes">4</p>
+    <img class="minus" src="./images/icon-minus.svg" alt="">
+  </div>
+  <div class="d-flex reply-icon-wrap">
+    <img src="./images/icon-reply.svg" alt=""/>
+    <p class="reply">Reply</p>
+  </div>
+  </div>
+</div>
+<!--  -->
+<div class="comment-bar">
+  <div class="d-flex comment-dp-name">
+   <img src="./images/avatars/image-juliusomo.png" alt=""/>
+   <h4>juliusomo</h4>
+   <p class="grey">1 week ago</p>
+  </div>
+  <p class="grey">I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
+  <div class="d-flex reply-vote-wrap">
+  <div class="d-flex vote-bar">
+    <img class="plus" src="./images/icon-plus.svg" alt="">
+    <p class="votes">4</p>
+    <img class="minus" src="./images/icon-minus.svg" alt="">
+  </div>
+  <div class="d-flex">
+    <div class="d-flex edit-wrap">
+      <img src="./images/icon-delete.svg" alt=""/>
+      <p class="delete">Delete</p>
+    </div>
+    <div class="d-flex delete-wrap">
+    <img src="./images/icon-edit.svg" alt=""/>
+    <p class="edit">Edit</p>
+  </div>
+  </div>
+  </div>
+</div>
+</div>
+<!--  -->
+<br>
+<div class="input-wrapper-container all-comment">
+<div class="input-wrapper">
+  <div class="d-flex input-box-wrap">
+  <input class="reply-input" type="text" placeholder="Add your comment..."/>
+</div>
+<br>
+<div class="d-flex reply-dp-wrap">
+  <img src="./images/avatars/image-juliusomo.png" alt=""/>
+  <button class="reply-btn d-flex submit">SEND</button>
+</div>
+</div>
+</div>
+<!--  -->
+    </div>
+    </div>
+</div>
+<script type="module" src="index.js"></script>
+<script  src="script.js"></script>
+ 
 </body>
 </html>

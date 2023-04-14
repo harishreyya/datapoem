@@ -1,0 +1,92 @@
+.comment-bar,.input-wrapper{
+background-color: white;
+padding: 20px;
+border-radius: 5px;
+margin: 5px;
+}
+
+.comment-dp-name{
+height:20px;
+}
+
+.comment-dp-name img{
+    max-height: 100%;
+  }
+
+.grey{
+    color: hsl(228, 6%, 83%);
+}
+
+.reply-vote-wrap{
+    justify-content: space-between;
+    color: hsl(238, 40%, 52%);
+    font-weight: 700;
+}
+
+.vote-bar{
+    background-color: hsl(228, 33%, 97%);
+    gap:12px;
+    padding: 10px;
+    height: 13px;
+    border-radius: 5px;
+}
+
+.vote-bar img{
+    width: 10px;
+    cursor: pointer;
+}
+
+.vote-bar img:hover{
+    width: 13px;
+    cursor: pointer;
+    transition: 0.2s ease all;
+}
+
+/* reply section */
+.input-wrapper{
+    align-items: start;
+}
+.input-wrapper img{
+width: 24px;
+}
+
+.reply-input{
+    width: 80%;
+    height: 80px;
+}
+
+.input-box-wrap{
+    justify-content: center;
+}
+.reply-dp-wrap{
+    justify-content: space-evenly;
+    gap: 50%;
+}
+.reply-icon-wrap .reply{
+padding-top: 10px;
+}
+.reply-input::placeholder{
+    top: 100px;
+}
+
+.reply-btn{
+    background-color: hsl(238, 40%, 52%);
+    color: white;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 4px;
+    justify-content: center;
+    font-size: 13px;
+    cursor: pointer;
+
+}
+
+.edit-wrap,.delete-wrap{
+    gap: 6px;
+    cursor: pointer;
+}
+
+.delete{
+    color: hsl(358, 79%, 66%);
+}
