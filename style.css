@@ -69,7 +69,7 @@ padding-top: 10px;
     top: 100px;
 }
 
-.reply-btn{
+.reply-btn, .you{
     background-color: hsl(238, 40%, 52%);
     color: white;
     border: none;
@@ -79,10 +79,16 @@ padding-top: 10px;
     justify-content: center;
     font-size: 13px;
     cursor: pointer;
-
 }
-
-.edit-wrap,.delete-wrap{
+.you{
+    width: 35px;
+    height: 15px;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-wrap,.delete-wrap,.edit-comment{
     gap: 6px;
     cursor: pointer;
 }
@@ -90,3 +96,17 @@ padding-top: 10px;
 .delete{
     color: hsl(358, 79%, 66%);
 }
+
+.main-comment-reply{
+    margin-left: 64px;
+  }
+
+  input{
+    cursor: pointer;
+  }
+
+  @media(min-width:740px){
+    .comment-container{
+        width: 70%;
+       }
+  }

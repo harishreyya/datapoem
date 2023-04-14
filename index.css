@@ -44,10 +44,6 @@
     cursor: pointer;
   }
 
-  /* .all-comment:not(:first-child), .input-wrapper:not(:first-child) {
-    margin-left: 4rem;
-  } */
-
   .d-none{
     display: none;
   }
