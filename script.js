@@ -8,7 +8,7 @@ plusOne.text(plus);
 $(document).on('click','.minus', function(){
     let minus = $(this).closest('.vote-bar').find('.votes').text()
     minus--
-    plusOne = $(this).closest('.vote-bar').find('.votes')
+    let   plusOne = $(this).closest('.vote-bar').find('.votes')
     $(plusOne).text(minus)
     })
 
