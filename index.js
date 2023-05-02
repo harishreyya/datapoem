@@ -112,6 +112,8 @@ function addReplyComment(text) {
   return div;
 }
 
+
+
 commentContainer.addEventListener("click", function (e) {
   let replyClicked = e.target.classList.contains("reply");
   let submitClicked = e.target.classList.contains("submit");
@@ -121,6 +123,8 @@ commentContainer.addEventListener("click", function (e) {
   let deleteClicked = e.target.classList.contains("delete");
   let sendClicked = e.target.classList.contains("send");
   let editComment = e.target.classList.contains("edit-comment");
+  let undo = document.getElementById('undo');
+  
   if (replyClicked) {
     closestCard.appendChild(createInputBox());
   }
@@ -156,8 +160,15 @@ commentContainer.addEventListener("click", function (e) {
    }
 
   if(deleteClicked){
-    commentParent.remove()
+   commentParent.classList.add("d-none");
+    // commentParent.remove()
   }
+
+  if(undo){
+    commentParent.classList.remove("d-none");
+  }
+
+ 
 
   if(sendClicked){
     const commentDetails = e.target.closest(".input-wrapper");
