@@ -161,7 +161,7 @@ commentContainer.addEventListener("click", function (e) {
 
   if(deleteClicked){
    commentParent.classList.add("d-none");
-    // commentParent.remove()
+    commentParent.remove()
   }
 
   if(undo){
